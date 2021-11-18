@@ -26,9 +26,9 @@ function CountryDetails() {
             <thead></thead>
                 <tbody>
                     <tr>
-                        <td style={{width: '30%'}}>Capital</td>
+                        <td style={{width: '30%'}}>{foundCountry.capital.length > 1 ? "Capitals" : "Capital"}</td>
                         <td>{foundCountry.capital.map((item) => {
-                            return item
+                            return item.length > 1 ? `${item} ` : item 
                         })}</td>
                     </tr>
                     <tr>

@@ -29,7 +29,7 @@ function App() {
           <Routes>
 
 
-            <Route path="/:country/*" element={<CountryDetails />} />
+            <Route path="/:country/" element={<CountryDetails />} />
 
           </Routes>
 
